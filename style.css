@@ -1,14 +1,18 @@
+body {
+  background-color: rgb(8, 8, 8);
+}
 .wrapper {
         display: grid;
         grid-template-columns: 33% 67%;
-        padding: 20px;
+        padding: 10px;
         grid-gap: 3px;
+        grid-column-gap: 10px;
     }
 
     #header {
         font-size: 2em;
         text-align: center;
-        background-color: aqua;
+        background-color: rgb(255, 174, 0);
         grid-column-start: 1;
         grid-column-end: 4;
         padding: 20px;
@@ -17,6 +21,10 @@
         font-size: 1.5em;
         text-align: left;
         background-color: greenyellow;
+        width: 120px;
+        padding: 10px;
+        margin: 0;
+        border: 5px;
     }
     #nav a:hover {
       background-color: #ddd;
@@ -24,18 +32,26 @@
     }
     ul {
       list-style-type:none;
-      display: table;
     }
     #main li {
       list-style-type:none;
-      display: table;
-      background-color: rgb(230, 234, 240);
+      width: 200px;
+      padding: 10px;
+      margin: 0;
+      border: 5px;
+      background-color: rgb(125, 130, 138);
 
+    }
+    h5 {
+      font: italic;
+      font-style: italic;
+      font-size: 1em;
+      font-family: sans-serif;
     }
     #main {
         font-size: 1.5em;
         text-align: center;
-        background-color: pink;
+        background-color: aliceblue;
     }
     #footer {
         font-size: 1em;
