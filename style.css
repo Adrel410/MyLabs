@@ -1,68 +1,46 @@
-body {
-  background-color: rgb(28, 28, 206);
-  padding: 10px;
-}
-*{
-  color: #fff;
-  font-size: 18px;
-  font-weight: 100;
-  box-sizing: border-box;
-  font-family: 'Metrophobic', Arial, serif;
-}
-ul {
-  list-style-type:none;
-}
-div {
-  display: grid;
-  grid-template-columns: 33% 33% 34%;
-  grid-row-gap: 0;
-  text-align: center;
-  background-color: #f8f417;
-  border-radius: 5px;
-  padding: 20px;
-}
-.header {
-  background-color: #f1f1f1;
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  width: 100%;
-  padding: 50px;
-  margin-bottom: 50px
-}
-.column a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.column a {
-  border: 100%;
-  width: 100%;
-  padding: 100;
-  grid-column: 1;
-  grid-row: 2 / 4;
-}
-.column {
-  float: left;
-  width: 100%;
-  padding: 1%;
-  background-color: rgb(51, 51, 51);
-}
-.foot {
-  width: 100%;
-  padding: 20px
-}
-li {
-  list-style-type:none;
-  display: -webkit-box;
-  box-sizing: border-box;
-  background-color: lightgray
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-h1
-{
-  margin: 3;
-}
+.wrapper {
+        display: grid;
+        grid-template-columns: 33% 67%;
+        padding: 20px;
+        grid-gap: 3px;
+    }
+
+    #header {
+        font-size: 2em;
+        text-align: center;
+        background-color: aqua;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 20px;
+    }
+    #nav {
+        font-size: 1.5em;
+        text-align: left;
+        background-color: greenyellow;
+    }
+    #nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    ul {
+      list-style-type:none;
+      display: table;
+    }
+    #main li {
+      list-style-type:none;
+      display: table;
+      background-color: rgb(230, 234, 240);
+
+    }
+    #main {
+        font-size: 1.5em;
+        text-align: center;
+        background-color: pink;
+    }
+    #footer {
+        font-size: 1em;
+        text-align: center;
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
